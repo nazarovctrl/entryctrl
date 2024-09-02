@@ -1,4 +1,4 @@
-package uz.nazarovctrl.entryctrl;
+package uz.nazarovctrl.entryctrl.telegrambot;
 
 import io.github.nazarovctrl.telegrambotspring.controller.AbstractUpdateController;
 
