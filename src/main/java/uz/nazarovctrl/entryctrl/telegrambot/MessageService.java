@@ -22,11 +22,11 @@ public class MessageService {
         }
     }
 
-    public Message sendMessage(String chatId, String message) {
-        return sendMessage(new SendMessage(chatId, message));
+    public Message sendMessage(String chatId, String text) {
+        return sendMessage(new SendMessage(chatId, text));
     }
 
-    public Message sendMessage(Long chatId, String message) {
-        return sendMessage(chatId.toString(), message);
+    public Message sendMessage(Long chatId, String text) {
+        return sendMessage(chatId.toString(), text);
     }
 }

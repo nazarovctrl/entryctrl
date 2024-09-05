@@ -14,10 +14,10 @@ public class MessageInternalizationService {
     }
 
     public String getMessage(String code, String lang) {
-        return messageSource.getMessage(code, null, new Locale(lang));
+        return messageSource.getMessage(code, null, new Locale(lang.toLowerCase()));
     }
 
     public String getMessage(String code, String lang, Object... arg) {
-        return messageSource.getMessage(code, arg, new Locale(lang));
+        return messageSource.getMessage(code, arg, new Locale(lang.toLowerCase()));
     }
 }
